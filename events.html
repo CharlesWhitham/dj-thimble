@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DJ-Thïmble live events — upcoming and past gigs in Japan.">
+  <title>Events | DJ-Thïmble</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">DJ-THÏMBLE</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+       ====================================================== -->
+
+  <header class="page-header">
+    <div class="container">
+      <p class="hero-eyebrow">On the road</p>
+      <h1 class="page-header-title">Events</h1>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       UPCOMING EVENTS
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="upcoming-heading">
+    <div class="container">
+      <h2 class="section-heading" id="upcoming-heading">Upcoming</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+
+      <div class="events-empty">
+        <p>No shows currently scheduled. Check back soon.</p>
+        <a href="booking.html" class="section-link">Booking inquiries welcome</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PAST EVENTS
+       ====================================================== -->
+
+  <section class="section section--alt" aria-labelledby="past-heading">
+    <div class="container">
+      <h2 class="section-heading" id="past-heading">Past Shows</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+
+      <ul class="events-list events-list--full">
+
+        <li class="event-row-full">
+          <div class="event-row-full-date">
+            <span class="event-date-day">15</span>
+            <span class="event-date-month">Aug</span>
+            <span class="event-date-year">2026</span>
+          </div>
+          <div class="event-row-full-info">
+            <span class="event-info-name">Thomas Bar Edison + Music</span>
+            <span class="event-info-venue">Nihonbashi, Chuo City, Tokyo</span>
+            <p class="event-description">Guest DJ set alongside DJ Acid Love Cindy. Three songs. The debut.</p>
+          </div>
+          <span class="event-tag past">Past</span>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       BOOKING CTA
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="booking-cta-heading">
+    <div class="container booking-cta">
+      <h2 class="section-heading" id="booking-cta-heading">Book DJ-Thïmble</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="section-subhead">Metal nights, private events, club sets. Get in touch.</p>
+      <a href="booking.html" class="hero-cta">Booking Inquiry</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">DJ-THÏMBLE</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="events.html">Events</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 DJ-Th&iuml;mble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

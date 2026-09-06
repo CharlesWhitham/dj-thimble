@@ -578,6 +578,125 @@ ul {
 }
 
 /* ============================================================
+   PAGE HEADER (interior pages)
+   ============================================================ */
+
+.page-header {
+  padding: 140px 0 60px;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 50% 55%, #5a0015 0%, #2a000a 40%, transparent 70%),
+    radial-gradient(ellipse at 25% 85%, #3a000e 0%, transparent 55%);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-header-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 7rem);
+  letter-spacing: 0.04em;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 0.6rem;
+  text-shadow:
+    0 0 60px var(--accent-glow),
+    0 0 120px rgba(176, 0, 32, 0.15);
+}
+
+/* ============================================================
+   FULL EVENT ROWS (events page)
+   ============================================================ */
+
+.events-list--full {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.event-row-full {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: start;
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.event-row-full:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.event-row-full-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0.2rem;
+}
+
+.event-date-day {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: var(--accent);
+  line-height: 1;
+  display: block;
+}
+
+.event-date-month {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+}
+
+.event-date-year {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.event-description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 0.4rem;
+  line-height: 1.6;
+}
+
+.events-empty {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.events-empty p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.booking-cta {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .event-row-full {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .event-row-full .event-tag {
+    display: none;
+  }
+}
+
+/* ============================================================
    MOBILE NAV
    ============================================================ */
 
