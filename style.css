@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@400;500;600;700&display=swap');
 
 /* ============================================================
    RESET & BASE
@@ -19,7 +19,7 @@
   --accent:       #c41e3a;
   --accent-hover: #e02244;
   --border:       #2a2a2a;
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Anton', sans-serif;
   --font-body:    'Rajdhani', sans-serif;
 }
 
@@ -245,6 +245,7 @@ ul {
 
 .hero-cta {
   display: inline-block;
+  align-self: flex-start;
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 0.85rem;
