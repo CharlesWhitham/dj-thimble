@@ -215,18 +215,15 @@ ul {
 .hero-title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(4.5rem, 13vw, 11rem);
-  line-height: 0.9;
-  letter-spacing: 0.01em;
+  font-size: clamp(2.8rem, 8.5vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.08em;
   color: var(--text);
   margin-bottom: 1.5rem;
+  white-space: nowrap;
   text-shadow:
     0 0 60px var(--accent-glow),
     0 0 120px rgba(196, 30, 58, 0.15);
-}
-
-.hero-title .umlaut {
-  color: var(--accent);
 }
 
 .hero-tagline {
