@@ -16,9 +16,9 @@
   --bg-card:      #131313;
   --text:         #e0e0e0;
   --text-muted:   #777777;
-  --accent:       #c41e3a;
-  --accent-hover: #e02244;
-  --accent-glow:  rgba(196, 30, 58, 0.35);
+  --accent:       #b00020;
+  --accent-hover: #cc0028;
+  --accent-glow:  rgba(176, 0, 32, 0.35);
   --border:       #252525;
   --font-display: 'Cinzel', serif;
   --font-body:    'Rajdhani', sans-serif;
@@ -223,7 +223,7 @@ ul {
   white-space: nowrap;
   text-shadow:
     0 0 60px var(--accent-glow),
-    0 0 120px rgba(196, 30, 58, 0.15);
+    0 0 120px rgba(176, 0, 32, 0.15);
 }
 
 .hero-tagline {
@@ -451,7 +451,7 @@ ul {
 .about-strip-stat {
   border-left: 3px solid var(--accent);
   padding-left: 1.5rem;
-  box-shadow: -3px 0 12px rgba(196, 30, 58, 0.2);
+  box-shadow: -3px 0 12px rgba(176, 0, 32, 0.2);
 }
 
 .about-strip-stat-number {
@@ -493,7 +493,7 @@ ul {
 
 .mix-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 20px rgba(196, 30, 58, 0.12);
+  box-shadow: 0 0 20px rgba(176, 0, 32, 0.12);
 }
 
 .mix-card-platform {
