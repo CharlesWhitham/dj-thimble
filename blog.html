@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DJ-Thïmble — thoughts on metal, recaps, and music talk from a metal DJ in Japan.">
+  <title>Blog | DJ-Thïmble</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">DJ-THÏMBLE</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+       ====================================================== -->
+
+  <header class="page-header">
+    <div class="container">
+      <p class="hero-eyebrow">Thoughts and recaps</p>
+      <h1 class="page-header-title">Blog</h1>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       BLOG INDEX
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="posts-heading">
+    <div class="container">
+      <h2 class="section-heading" id="posts-heading">Posts</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+
+      <ul class="blog-list">
+
+        <li class="blog-row">
+          <div class="blog-row-meta">
+            <span class="blog-row-date">Aug 2026</span>
+          </div>
+          <div class="blog-row-content">
+            <a href="debut-night.html" class="blog-row-title">The Debut: Three Songs at Thomas Bar Edison + Music</a>
+            <p class="blog-row-excerpt">Playing three songs at a bar in Nihonbashi as a guest alongside DJ Acid Love Cindy. A short set, a big first step.</p>
+            <a href="debut-night.html" class="section-link">Read more</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">DJ-THÏMBLE</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="events.html">Events</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 DJ-Th&iuml;mble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

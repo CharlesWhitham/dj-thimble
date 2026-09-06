@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About DJ-Thïmble — American metal DJ based in Japan since 2011.">
+  <title>About | DJ-Thïmble</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">DJ-THÏMBLE</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+       ====================================================== -->
+
+  <header class="page-header">
+    <div class="container">
+      <p class="hero-eyebrow">The story</p>
+      <h1 class="page-header-title">About</h1>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       BIO
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="bio-heading">
+    <div class="container">
+      <div class="about-bio">
+        <div class="about-bio-text">
+          <h2 class="section-heading" id="bio-heading">DJ-Thïmble</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+
+          <p>DJ-Thïmble is an American metal DJ operating out of Tokyo, Japan. The name traces back to a band called Thimble, put together years ago on the West Coast of the United States. The music has changed form a few times since then. The commitment to heavy has not.</p>
+
+          <p>Relocating to Japan in 2011 meant trading one music scene for another. The Japanese metal underground is serious, dedicated, and genuinely loud. It made sense to get involved.</p>
+
+          <p>The sets run across the harder end of the metal spectrum: death, black, thrash, doom, and anything else with enough weight behind it. No pop metal, no crowd-pleasing crossover. Just the real thing, played at volume, for people who know the difference.</p>
+
+          <p>The umlaut is intentional. So is everything else.</p>
+        </div>
+
+        <div class="about-bio-stats">
+          <div class="about-stat-block">
+            <span class="about-stat-number">2011</span>
+            <span class="about-stat-label">Arrived in Japan</span>
+          </div>
+          <div class="about-stat-block">
+            <span class="about-stat-number">Tokyo</span>
+            <span class="about-stat-label">Based</span>
+          </div>
+          <div class="about-stat-block">
+            <span class="about-stat-number">Metal</span>
+            <span class="about-stat-label">Only genre</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       WHAT TO EXPECT
+       ====================================================== -->
+
+  <section class="section section--alt" aria-labelledby="sound-heading">
+    <div class="container">
+      <h2 class="section-heading" id="sound-heading">The Sound</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="section-subhead">What a DJ-Thïmble set actually sounds like.</p>
+
+      <div class="genre-grid">
+        <div class="genre-card">
+          <span class="genre-card-name">Death Metal</span>
+          <p class="genre-card-desc">Technical, brutal, and uncompromising. The foundation of any serious set.</p>
+        </div>
+        <div class="genre-card">
+          <span class="genre-card-name">Black Metal</span>
+          <p class="genre-card-desc">Raw, atmospheric, and extreme. Scandinavian roots and everything they spawned.</p>
+        </div>
+        <div class="genre-card">
+          <span class="genre-card-name">Thrash Metal</span>
+          <p class="genre-card-desc">Fast, aggressive, and loud. The classics and the bands that kept the flag flying.</p>
+        </div>
+        <div class="genre-card">
+          <span class="genre-card-name">Doom Metal</span>
+          <p class="genre-card-desc">Slow, heavy, and relentless. The kind of music that makes a room feel smaller.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       BOOKING CTA
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="about-booking-heading">
+    <div class="container booking-cta">
+      <h2 class="section-heading" id="about-booking-heading">Book DJ-Thïmble</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="section-subhead">Metal nights, private events, club sets. Get in touch.</p>
+      <a href="booking.html" class="hero-cta">Booking Inquiry</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">DJ-THÏMBLE</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="events.html">Events</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 DJ-Th&iuml;mble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
