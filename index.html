@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DJ-Thïmble spins heavy metal in Japan. Upcoming gigs, mixes, and booking info.">
+  <title>DJ-Thïmble | Metal DJ in Japan</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">DJ-TH<span>Ï</span>MBLE</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
+
+  <section class="hero" aria-label="Introduction">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Metal DJ based in Japan</p>
+      <h1 class="hero-title">DJ-TH<span class="umlaut">Ï</span>MBLE</h1>
+      <p class="hero-tagline">Heavy music. No apologies. Playing the ugliest, loudest, most relentless metal Japan will let me get away with.</p>
+      <div class="hero-divider" aria-hidden="true"></div>
+
+      <div class="hero-event">
+        <span class="hero-event-label">Next Show</span>
+        <span class="hero-event-name">TBA</span>
+        <span class="hero-event-meta">Stay tuned for upcoming dates</span>
+      </div>
+
+      <a href="events.html" class="hero-cta">See All Events</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       EVENTS PREVIEW
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="events-heading">
+    <div class="container">
+      <h2 class="section-heading" id="events-heading">Shows</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="section-subhead">Upcoming and recent gigs around Japan.</p>
+
+      <ul class="events-list">
+        <li class="event-row">
+          <div class="event-date">
+            TBA
+            <span class="event-date-sub">2026</span>
+          </div>
+          <div>
+            <span class="event-info-name">Next Event</span>
+            <span class="event-info-venue">Venue TBA, Japan</span>
+          </div>
+          <span class="event-tag">Upcoming</span>
+        </li>
+      </ul>
+
+      <a href="events.html" class="section-link">Full event history</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       ABOUT STRIP
+       ====================================================== -->
+
+  <section class="section section--alt" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-strip">
+        <div class="about-strip-text">
+          <h2 class="section-heading" id="about-heading">The Setup</h2>
+          <div class="section-rule" aria-hidden="true"></div>
+          <p>DJ-Thïmble is an American metal DJ operating in Japan. The sets run deep into extreme metal territory: death, black, thrash, doom, and everything in between that still has teeth.</p>
+          <p>No pop metal. No crowd-pleasing crossover. Just the real thing, played loud, sequenced for maximum damage.</p>
+          <a href="about.html" class="section-link">More about DJ-Thïmble</a>
+        </div>
+        <div>
+          <div class="about-strip-stat">
+            <span class="about-strip-stat-number">Japan</span>
+            <span class="about-strip-stat-label">Based since 2011</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       MUSIC PREVIEW
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="music-heading">
+    <div class="container">
+      <h2 class="section-heading" id="music-heading">Mixes</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+      <p class="section-subhead">Recorded sets and mixes. More available on external platforms.</p>
+
+      <div class="mix-grid">
+        <div class="mix-card">
+          <span class="mix-card-platform">Coming Soon</span>
+          <span class="mix-card-title">First Mix Incoming</span>
+          <span class="mix-card-meta">Links to SoundCloud / Mixcloud will live here</span>
+        </div>
+      </div>
+
+      <a href="music.html" class="section-link">All mixes and links</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">DJ-TH<span>Ï</span>MBLE</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="events.html">Events</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 DJ-Th&iuml;mble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile nav toggle -->
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
