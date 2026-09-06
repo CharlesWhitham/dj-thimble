@@ -764,3 +764,385 @@ ul {
     scroll-behavior: auto;
   }
 }
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+
+.about-bio {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-bio-text p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  max-width: 600px;
+}
+
+.about-bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-bio-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-stat-block {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  box-shadow: -3px 0 12px rgba(176, 0, 32, 0.2);
+}
+
+.about-stat-number {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: var(--text);
+  line-height: 1;
+  display: block;
+  letter-spacing: 0.02em;
+}
+
+.about-stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1px;
+}
+
+.genre-card {
+  background-color: var(--bg-card);
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease;
+}
+
+.genre-card:hover {
+  border-color: var(--accent);
+}
+
+.genre-card-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.genre-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-bio {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* ============================================================
+   MUSIC PAGE
+   ============================================================ */
+
+.music-coming-soon {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.music-coming-soon p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 560px;
+}
+
+.platform-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.platform-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  min-width: 180px;
+  transition: border-color 0.2s ease;
+  color: var(--text);
+}
+
+.platform-card:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.platform-card-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.platform-card-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   BLOG PAGE
+   ============================================================ */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.blog-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-row:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.blog-row-date {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0.3rem;
+}
+
+.blog-row-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  transition: color 0.2s ease;
+}
+
+.blog-row-title:hover {
+  color: var(--accent);
+}
+
+.blog-row-excerpt {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+  max-width: 580px;
+}
+
+@media (max-width: 600px) {
+  .blog-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/* ============================================================
+   PHOTOS PAGE
+   ============================================================ */
+
+.gallery-empty {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.gallery-empty p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 4px;
+}
+
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.photo-grid img:hover {
+  opacity: 0.85;
+}
+
+/* ============================================================
+   BOOKING PAGE
+   ============================================================ */
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.booking-info-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 420px;
+}
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.booking-detail-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.booking-detail-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0.1rem;
+}
+
+.booking-detail-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-input {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease;
+  appearance: none;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-submit {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+  background-color: var(--accent);
+  padding: 0.85rem 2.2rem;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: transparent;
+  color: var(--accent);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+@media (max-width: 768px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .booking-info-text {
+    max-width: 100%;
+  }
+}

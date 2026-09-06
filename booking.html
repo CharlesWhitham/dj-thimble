@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book DJ-Thïmble for metal nights, private events, and club sets in Japan.">
+  <title>Booking | DJ-Thïmble</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">DJ-THÏMBLE</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+       ====================================================== -->
+
+  <header class="page-header">
+    <div class="container">
+      <p class="hero-eyebrow">Get in touch</p>
+      <h1 class="page-header-title">Booking</h1>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       BOOKING FORM
+       ====================================================== -->
+
+  <section class="section" aria-labelledby="booking-heading">
+    <div class="container booking-layout">
+
+      <div class="booking-info">
+        <h2 class="section-heading" id="booking-heading">Inquiries</h2>
+        <div class="section-rule" aria-hidden="true"></div>
+        <p class="booking-info-text">Available for metal nights, hard rock events, private parties, and club sets across Japan. Fill out the form and expect a response within a few days.</p>
+
+        <ul class="booking-details">
+          <li class="booking-detail-item">
+            <span class="booking-detail-label">Based in</span>
+            <span class="booking-detail-value">Tokyo, Japan</span>
+          </li>
+          <li class="booking-detail-item">
+            <span class="booking-detail-label">Available for</span>
+            <span class="booking-detail-value">Club nights, private events, festivals</span>
+          </li>
+          <li class="booking-detail-item">
+            <span class="booking-detail-label">Genre</span>
+            <span class="booking-detail-value">Classic rock, hard rock, heavy metal, grunge</span>
+          </li>
+          <li class="booking-detail-item">
+            <span class="booking-detail-label">Email</span>
+            <span class="booking-detail-value"><a href="mailto:charles@charleswritesbooks.com">charles@charleswritesbooks.com</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="booking-form-wrap">
+        <form
+          action="https://formspree.io/f/mljewaga"
+          method="POST"
+          class="booking-form"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="venue" class="form-label">Venue or Event Name</label>
+            <input type="text" id="venue" name="venue" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="date" class="form-label">Event Date</label>
+            <input type="text" id="date" name="date" class="form-input" placeholder="e.g. October 2026 or flexible">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Details</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me about the event, the vibe, the crowd, anything relevant."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Inquiry</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">DJ-THÏMBLE</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="events.html">Events</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 DJ-Th&iuml;mble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
