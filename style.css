@@ -171,12 +171,8 @@ ul {
   justify-content: center;
   background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse at 50% 55%, rgba(90, 0, 21, 0.75) 0%, rgba(42, 0, 10, 0.75) 40%, transparent 65%),
-    radial-gradient(ellipse at 25% 85%, rgba(58, 0, 14, 0.5) 0%, transparent 50%),
-    url('images/metal_hand-removebg-preview.png');
-  background-size: auto, auto, auto 110%;
-  background-position: center, center, center center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+    radial-gradient(ellipse at 50% 55%, #5a0015 0%, #2a000a 40%, transparent 70%),
+    radial-gradient(ellipse at 25% 85%, #3a000e 0%, transparent 55%);
   padding-top: 64px;
   position: relative;
   overflow: hidden;
@@ -197,6 +193,17 @@ ul {
   pointer-events: none;
 }
 
+.hero-hand {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-inner {
   display: flex;
   flex-direction: column;
@@ -204,6 +211,7 @@ ul {
   flex: 1;
   padding: 80px 0 40px;
   position: relative;
+  z-index: 1;
 }
 
 .hero-eyebrow {
