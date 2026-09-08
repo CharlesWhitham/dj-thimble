@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -200,18 +201,6 @@ ul {
   flex: 1;
   padding: 80px 0 40px;
   position: relative;
-  z-index: 1;
-}
-
-.hero-hand {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 90%;
-  width: auto;
-  opacity: 0.35;
-  pointer-events: none;
-  z-index: 0;
 }
 
 .hero-eyebrow {
@@ -232,7 +221,6 @@ ul {
   letter-spacing: 0.08em;
   color: var(--text);
   margin-bottom: 1.5rem;
-  white-space: nowrap;
   text-shadow:
     0 0 60px var(--accent-glow),
     0 0 120px rgba(176, 0, 32, 0.15);
@@ -755,7 +743,8 @@ ul {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(3.5rem, 18vw, 5.5rem);
+    font-size: clamp(2.2rem, 11vw, 3rem);
+    letter-spacing: 0.04em;
   }
 
   .section {
@@ -1257,51 +1246,4 @@ ul {
     flex-wrap: wrap;
     gap: 0.3rem;
   }
-}
-
-/* ============================================================
-   SETLIST BLOCKS (music page)
-   ============================================================ */
-
-.setlist-block {
-  margin-bottom: 4rem;
-}
-
-.setlist-block-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.setlist-block-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.setlist-block-date {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: 0.03em;
-  color: var(--accent);
-  line-height: 1;
-}
-
-.setlist-block-venue {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
-
-.setlist-block-note {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
 }
