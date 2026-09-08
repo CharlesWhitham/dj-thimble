@@ -173,8 +173,8 @@ ul {
   background-image:
     radial-gradient(ellipse at 50% 55%, #5a0015 0%, #2a000a 40%, transparent 70%),
     radial-gradient(ellipse at 25% 85%, #3a000e 0%, transparent 55%),
-    url('sample_metal.jpg');
-  background-size: auto, auto, cover;
+    url('images/metal_hand-removebg-preview.png');
+  background-size: auto, auto, auto 110%;
   background-position: center, center, center center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   padding-top: 64px;
