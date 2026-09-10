@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DJ-Thïmble photos — live shots and behind the scenes from a metal DJ in Japan.">
   <title>Photos | DJ-Thïmble</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=13">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f56986d2-67fe-4632-ba61-cb0809628ed9"></script>
 </head>
 <body>
@@ -56,13 +56,19 @@
       <div class="section-rule" aria-hidden="true"></div>
 
       <div class="photo-grid">
-        <img src="images/BTEddie.jpg" alt="Metal Town Cafe flyer — Boys Town Cafe, October 24, 2026">
-        <img src="images/BTTime.jpg" alt="Metal Town Cafe time table — Boys Town Cafe, October 24, 2026">
-        <img src="images/AIRMotley.jpg" alt="Heavy Metal (is The LAW) Vol. 3 flyer — In The Air, November 5, 2026">
-        <img src="images/AIRTime.jpg" alt="Heavy Metal (is The LAW) Vol. 3 time table — In The Air, November 5, 2026">
+        <img src="images/BTEddie.jpg" alt="Metal Town Cafe flyer — Boys Town Cafe, October 24, 2026" class="lightbox-trigger">
+        <img src="images/BTTime.jpg" alt="Metal Town Cafe time table — Boys Town Cafe, October 24, 2026" class="lightbox-trigger">
+        <img src="images/AIRMotley.jpg" alt="Heavy Metal (is The LAW) Vol. 3 flyer — In The Air, November 5, 2026" class="lightbox-trigger">
+        <img src="images/AIRTime.jpg" alt="Heavy Metal (is The LAW) Vol. 3 time table — In The Air, November 5, 2026" class="lightbox-trigger">
       </div>
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
 
   <!-- ======================================================
        FOOTER
@@ -88,6 +94,33 @@
     toggle.addEventListener('click', function () {
       var isOpen = links.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var closeBtn = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(function(img) {
+      img.addEventListener('click', function() {
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+      lightboxImg.src = '';
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
     });
   </script>
 
