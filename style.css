@@ -364,6 +364,26 @@ ul {
   border-color: var(--border);
 }
 
+/* Flyer thumbnails: click opens the full flyer */
+.event-flyer {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-flyer:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.event-flyer img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Past shows: compact rows */
 .events-list--past .event-row {
   padding: 1.1rem 0;
