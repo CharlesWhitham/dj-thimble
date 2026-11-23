@@ -137,7 +137,7 @@ ul {
    ============================================================ */
 
 .hero {
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,12 +145,13 @@ ul {
   background-image:
     radial-gradient(ellipse at 50% 55%, #5a0015 0%, #2a000a 40%, transparent 70%),
     radial-gradient(ellipse at 25% 85%, #3a000e 0%, transparent 55%);
-  padding: 140px 0 70px;
+  padding-top: 64px;
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
 
+/* Faint horizontal rule lines behind hero */
 .hero::before {
   content: '';
   position: absolute;
@@ -165,7 +166,28 @@ ul {
   pointer-events: none;
 }
 
-.hero .container {
+.hero-hand {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 80px 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-inner > *:not(.hero-hand) {
   position: relative;
   z-index: 1;
 }
@@ -203,6 +225,7 @@ ul {
 
 .hero-cta {
   display: inline-block;
+  align-self: flex-start;
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.16em;
